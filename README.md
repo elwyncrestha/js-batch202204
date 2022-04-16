@@ -79,3 +79,11 @@
 * Module pattern
 
 ---
+
+## Other Contents and Terms
+
+* GIT
+* SVN vs GIT
+* Generalization and Specialization
+* Epoch Time
+* SRP (Single Responsibility Principle)

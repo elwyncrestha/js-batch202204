@@ -17,7 +17,7 @@ console.log(employees.some((e, i) => {
     console.log(`Index at: ${i}`);
     return e.salary < 12000;
 }));
-// return true if there all employees have salary > 5000
+// return true if all the employees have salary > 5000
 console.log(employees.every((e, i) => {
     console.log(`Index at: ${i}`);
     return e.salary > 5000;

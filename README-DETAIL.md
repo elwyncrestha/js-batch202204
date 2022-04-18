@@ -148,7 +148,8 @@
 * Function
   * Function call
   * Function apply
-  * Function closures
+  * Function bind
+* Function closures
 * Arrow functions
 * High Order Array Methods
   * map

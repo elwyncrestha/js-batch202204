@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2022 JavaScript Training - April Batch</title>
+</head>
+
+<body>
+    <div id="btn-wrapper" style="width: 100%; background: red; height: 50px; padding: 50px;">
+        <button id="btn" style="padding: 10px;" type="button">Click me!</button>
+    </div>
+    <script>
+        // event bubbling
+        document.querySelector('#btn-wrapper').addEventListener('click', () => console.log('Bubble: Button wrapper is clicked!'));
+        document.querySelector('#btn').addEventListener('click', () => console.log('Bubble: Button is clicked!'));
+        document.querySelector('body').addEventListener('click', () => console.log('Bubble: Body is clicked!'));
+        // event capturing
+        document.querySelector('#btn-wrapper').addEventListener('click', () => console.log('Capture: Button wrapper is clicked!'), true);
+        document.querySelector('#btn').addEventListener('click', () => console.log('Capture: Button is clicked!'), true);
+        document.querySelector('body').addEventListener('click', () => console.log('Capture: Body is clicked!'), true);
+    </script>
+</body>
+
+</html>

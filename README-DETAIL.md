@@ -162,11 +162,10 @@
   * flatMap
   * find
   * sort
-* Constructor Functions & Prototypes Intro
-* ES6 Classes Intro
+* Constructor Functions
+* ES6 Classes and Sub Classes
 * Prototypes
 * Prototypal Inheritance
-* ES6 Classes and Sub Classes
 
 ---
 

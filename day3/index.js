@@ -6,17 +6,17 @@ footerPara.innerText = `${footerPara.innerText} ${now.getFullYear()}`;
 // form handling
 function validateForm() {
   event.preventDefault();
+  const emailHelp = document.querySelector(".email-control");
+  emailHelp?.remove();
   const email = document.querySelector("#email");
   if (!email.value) {
-    const emailBlock = document.querySelector("#emailBlock");
     const emailHelp = document.createElement("div");
     emailHelp.innerHTML = "Email is required";
     ['form-text', 'text-danger', 'email-control'].forEach((c) => emailHelp.classList.add(c));
+    const emailBlock = document.querySelector("#emailBlock");
     emailBlock.appendChild(emailHelp);
     return;
   }
-  const emailHelp = document.querySelector(".email-control");
-  emailHelp?.remove();
 
   const password = document.querySelector("#password");
   if (!password.value) {
